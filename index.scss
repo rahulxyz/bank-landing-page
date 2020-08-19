@@ -1,0 +1,174 @@
+/* colors */
+$dark-blue: hsl(233, 26%, 24%);
+$lime-green: hsl(136, 65%, 51%);
+$bright-cyan: hsl(192, 70%, 51%);
+$grayish-blue: hsl(233, 8%, 62%);
+$grayish-blue-light: hsl(220, 16%, 96%);
+$gray-light: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+
+$margin-bottom: 16px;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Public Sans", sans-serif;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  margin-bottom: $margin-bottom;
+  font-weight: 300;
+}
+
+.container {
+  width: 1366px;
+  margin: auto;
+}
+
+section {
+  padding: 50px 0;
+}
+
+header {
+  margin-bottom: $margin-bottom;
+}
+
+h4 {
+  margin: 0;
+  margin-bottom: $margin-bottom;
+}
+
+/* all sections */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 300;
+  font-size: 2.5rem;
+  padding: 8px 0;
+
+  nav {
+    width: 30%;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      li {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+/* banner */
+.banner {
+  .content {
+    width: 30%;
+  }
+}
+
+/* features */
+.features {
+  ul {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+
+    li {
+      width: 24%;
+      img {
+        margin-bottom: 32px;
+      }
+      h4 {
+        font-weight: 500;
+      }
+
+      p {
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+/* articles */
+.articles {
+  ul {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+
+    li {
+      width: 23%;
+      img {
+        margin-bottom: 32px;
+      }
+      h4 {
+        font-weight: 500;
+      }
+
+      p {
+        font-weight: 300;
+      }
+
+      .author {
+        font-size: 0.8rem;
+      }
+
+      .content {
+        padding: 16px;
+      }
+    }
+  }
+}
+
+footer {
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  nav {
+    display: flex;
+    font-size: 0.8rem;
+    div {
+      flex-direction: column;
+
+      &:first-child {
+        margin-right: 100px;
+      }
+    }
+  }
+
+  .content-right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p{
+        margin: 0;
+    }
+  }
+
+  .content-left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

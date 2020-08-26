@@ -284,6 +284,16 @@ footer {
   }
 }
 
+.attribution {
+  background: linear-gradient(to right, $lime-green, $bright-cyan);
+  color: $dark-blue;
+  padding: 4px 0;
+
+  .redirect-link {
+    color: $grayish-blue-light;
+  }
+}
+
 @media (max-width: 1366px) {
   body {
     font-size: 12px;
@@ -296,9 +306,7 @@ footer {
 }
 
 @media (max-width: 1024px) {
-
   .navbar {
-    
     nav,
     button {
       display: none;
@@ -307,11 +315,9 @@ footer {
     .mobile-menu-button {
       display: inline;
     }
-    
   }
 
   .mobile-menu {
-    display: none;
     position: relative;
     width: 100%;
     z-index: 10;
@@ -319,7 +325,7 @@ footer {
     color: $grayish-blue;
     font-size: 1rem;
 
-     nav {
+    nav {
       width: 100%;
       display: flex;
       justify-content: center;
@@ -333,7 +339,7 @@ footer {
           margin: 16px 0;
         }
       }
-     }
+    }
   }
 
   .banner {
@@ -348,9 +354,8 @@ footer {
       height: 600px;
     }
 
-    
-    .container{
-      justify-content: center;  
+    .container {
+      justify-content: center;
 
       .content {
         width: 40%;
@@ -383,14 +388,15 @@ footer {
     }
   }
 
-  footer { 
-
+  footer {
     .container {
       flex-direction: column;
       height: inherit;
       text-align: center;
 
-      .content-left, nav, .content-right {
+      .content-left,
+      nav,
+      .content-right {
         margin-bottom: $margin-bottom;
       }
 
@@ -408,5 +414,82 @@ footer {
       }
     }
   }
+}
 
+@media (max-width: 640px) {
+  .banner {
+    .container {
+      .content {
+        width: 60%;
+      }
+    }
+
+    img {
+      height: 400px;
+    }
+  }
+
+  .features {
+    text-align: center;
+
+    ul {
+      flex-wrap: wrap;
+
+      li {
+        width: 100%;
+        margin-bottom: $margin-bottom/2;
+      }
+    }
+  }
+
+  .articles {
+    text-align: center;
+
+    ul {
+      flex-wrap: wrap;
+
+      li {
+        width: 100%;
+
+        img {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  footer {
+    .container {
+      .content-left {
+        img {
+          margin-bottom: $margin-bottom;
+        }
+      }
+
+      nav {
+        flex-direction: column;
+
+        div:first-child {
+          margin-right: 0;
+        }
+      }
+
+      .content-right {
+        margin-bottom: 0;
+        button {
+          margin-bottom: $margin-bottom;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .banner {
+    .container {
+      .content {
+        width: 100%;
+      }
+    }
+  }
 }

@@ -290,11 +290,13 @@ footer .container .content-right p {
 }
 
 .attribution {
+  font-size: 11px;
+  text-align: center;
   background: linear-gradient(to right, #31d35c, #2bb7da);
   color: #2d314d;
   padding: 4px 0;
 }
-.attribution .redirect-link {
+.attribution a {
   color: #f3f4f6;
 }
 

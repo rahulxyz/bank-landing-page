@@ -1,5 +1,7 @@
 const mobileMenuButton = document.getElementById("mobile-menu-button");
 const mobileMenu = document.getElementById("mobile-menu");
+const navItem = document.getElementById("nav-item");
+
 let mobileMenuVisible = false;
 
 mobileMenuButton.addEventListener("click", ()=>{
@@ -9,5 +11,4 @@ mobileMenuButton.addEventListener("click", ()=>{
         mobileMenu.style.display = "flex";
 
     mobileMenuVisible = !mobileMenuVisible;
-    //console.log(mobileMenu.style.display);
-})
+});

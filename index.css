@@ -56,11 +56,11 @@ h4 {
   align-items: center;
   font-weight: 300;
   font-size: 2.5rem;
-  padding: 8px 0;
   color: #9698a6;
 }
 .navbar nav {
   width: 30%;
+  box-sizing: border-box;
 }
 .navbar nav ul {
   display: flex;
@@ -68,6 +68,16 @@ h4 {
 }
 .navbar nav ul li {
   font-size: 0.8rem;
+  background: white;
+  padding-bottom: 2px;
+}
+.navbar nav ul li div {
+  padding: 20px 0;
+  background: white;
+}
+.navbar nav ul li:hover {
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  padding-bottom: 2px;
 }
 .navbar .mobile-menu-button {
   display: none;
@@ -78,6 +88,9 @@ h4 {
   color: white;
   background: linear-gradient(to right, #31d35c, #2bb7da);
   border: none;
+}
+.navbar button:hover {
+  filter: brightness(120%);
 }
 
 /* mobile-menu */
@@ -104,6 +117,9 @@ h4 {
   background: linear-gradient(to right, #31d35c, #2bb7da);
   border: none;
 }
+.banner button:hover {
+  filter: brightness(120%);
+}
 .banner img {
   position: absolute;
   top: -30%;
@@ -128,6 +144,7 @@ h4 {
 }
 .features ul li h4 {
   font-weight: 500;
+  font-size: 1.2rem;
 }
 .features ul li p {
   font-weight: 300;
@@ -146,22 +163,33 @@ h4 {
   width: 23%;
 }
 .articles ul li img {
-  margin-bottom: 32px;
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 .articles ul li h4 {
   font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+}
+.articles ul li h4:hover {
+  color: #31d35c;
 }
 .articles ul li p {
   font-weight: 300;
+  margin-bottom: 10px;
 }
 .articles ul li .author {
   font-size: 0.8rem;
 }
 .articles ul li .content {
+  position: relative;
   padding: 16px;
+  background: white;
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+  height: 260px;
 }
 
 footer {
@@ -188,17 +216,32 @@ footer .container .content-left ul {
 footer .container .content-left ul li:nth-child(1) button {
   background-image: url("./images/icon-facebook.svg");
 }
+footer .container .content-left ul li:nth-child(1) button:hover {
+  background-image: url("./images/icon-facebook-green.svg");
+}
 footer .container .content-left ul li:nth-child(2) button {
   background-image: url("./images/icon-youtube.svg");
+}
+footer .container .content-left ul li:nth-child(2) button:hover {
+  background-image: url("./images/icon-youtube-green.svg");
 }
 footer .container .content-left ul li:nth-child(3) button {
   background-image: url("./images/icon-twitter.svg");
 }
+footer .container .content-left ul li:nth-child(3) button:hover {
+  background-image: url("./images/icon-twitter-green.svg");
+}
 footer .container .content-left ul li:nth-child(4) button {
   background-image: url("./images/icon-pinterest.svg");
 }
+footer .container .content-left ul li:nth-child(4) button:hover {
+  background-image: url("./images/icon-pinterest-green.svg");
+}
 footer .container .content-left ul li:nth-child(5) button {
   background-image: url("./images/icon-instagram.svg");
+}
+footer .container .content-left ul li:nth-child(5) button:hover {
+  background-image: url("./images/icon-instagram-green.svg");
 }
 footer .container .content-left .social-icons {
   width: 25px;
@@ -221,6 +264,9 @@ footer .container nav div:first-child {
 footer .container nav div p {
   margin-bottom: 8px;
 }
+footer .container nav div p:hover {
+  color: #31d35c;
+}
 footer .container .content-right {
   height: 100%;
   display: flex;
@@ -235,6 +281,9 @@ footer .container .content-right button {
   border: none;
   width: fit-content;
   margin-left: auto;
+}
+footer .container .content-right button:hover {
+  filter: brightness(120%);
 }
 footer .container .content-right p {
   margin: 0;
@@ -287,6 +336,7 @@ footer .container .content-right p {
   }
   .features ul li {
     width: 48%;
+    margin-bottom: 20px;
   }
 
   .articles {
@@ -297,6 +347,10 @@ footer .container .content-right p {
   }
   .articles ul li {
     width: 48%;
+    margin-bottom: 20px;
+  }
+  .articles ul li .content {
+    height: 200px;
   }
 
   footer .container {
@@ -366,6 +420,10 @@ footer .container .content-right {
     width: 40%;
     text-align: center;
   }
+
+  .articles ul li .content {
+    height: 220px;
+  }
 }
 @media (max-width: 640px) {
   .banner .container .content {
@@ -397,6 +455,9 @@ footer .container .content-right {
   }
   .articles ul li img {
     margin-bottom: 0;
+  }
+  .articles ul li .content {
+    height: inherit;
   }
 
   footer .container .content-left img {

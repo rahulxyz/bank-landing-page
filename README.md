@@ -6,4 +6,4 @@
 
 Design Source: [Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
-**Developed using basic HTML, CSS(+SASS) and Javascript. **
+**Developed using basic HTML, CSS(+SASS) and Javascript.**

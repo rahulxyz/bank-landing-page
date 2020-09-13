@@ -399,6 +399,7 @@ footer .container .content-right {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    text-align: center;
   }
   .mobile-menu nav ul li {
     margin: 16px 0;

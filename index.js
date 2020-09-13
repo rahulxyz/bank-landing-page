@@ -1,6 +1,6 @@
 const mobileMenuButton = document.getElementById("mobile-menu-button");
 const mobileMenu = document.getElementById("mobile-menu");
-const navItem = document.getElementById("nav-item");
+const navItem = document.getElementsByClassName("nav-item");
 
 let mobileMenuVisible = false;
 
